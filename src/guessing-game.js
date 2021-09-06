@@ -12,11 +12,11 @@ class GuessingGame {
     }
 
     lower() {
-        this.max = this.attempt - 1;
+       this.setRange(this.min, this.attempt);
     }
 
     greater() {
-        this.min = this.attempt + 1;
+        this.setRange(this.attempt, this.max); 
     }
 }
 
